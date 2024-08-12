@@ -3,7 +3,7 @@ char = input()
 IsThere = False
 
 for word in string:
-    if string[-1] == char:
+    if word[-1] == char:
         print(word)
         IsThere = True
     
