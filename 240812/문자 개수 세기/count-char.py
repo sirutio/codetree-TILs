@@ -1,8 +1,6 @@
 string = input()
 alphabet = input()
-cnt = 0
 
-for char in string:
-    if char == alphabet:
-        cnt += 1 
+
+cnt = string.count(alphabet)
 print(cnt)
