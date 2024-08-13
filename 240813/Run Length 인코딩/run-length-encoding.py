@@ -8,7 +8,10 @@ for i in range(len(A)):
     else:
         cnt += 1
         new.append(A[i])
-        new.append(cnt)
+        if cnt >= 10:
+            str_cnt = str(cnt)
+            for num in str_cnt:
+                new.append(num)
         cnt = 0
 
 print(len(new))
