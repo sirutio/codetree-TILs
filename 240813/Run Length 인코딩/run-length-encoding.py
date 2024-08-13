@@ -1,17 +1,15 @@
 A = input()
-cnt = 2
+cnt = 0
 new = []
 
 for i in range(len(A)):
-    if i != 0 and i != len(A)-1 and A[i] == A[i+1]:
+    if i != len(A)-1 and A[i] == A[i+1]:
         cnt += 1
     else:
-        if i != 0:
-            new.append(A[i])
-            new.append(cnt)
-            cnt = 1 
-        else:
-            continue
+        cnt += 1
+        new.append(A[i])
+        new.append(cnt)
+        cnt = 0
 
 print(len(new))
 for i in new:
