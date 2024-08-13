@@ -12,6 +12,8 @@ for i in range(len(A)):
             str_cnt = str(cnt)
             for num in str_cnt:
                 new.append(num)
+        else:
+            new.append(cnt)
         cnt = 0
 
 print(len(new))
