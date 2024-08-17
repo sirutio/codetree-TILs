@@ -1,6 +1,6 @@
 def Onjeonsoo(num):
     if num%2 != 0 and num%10 != 5:
-        if num%3 == 0 and num%9 != 0:
+        if not (num%3 == 0 and num%9 != 0):
             return True
     else:
         return False
