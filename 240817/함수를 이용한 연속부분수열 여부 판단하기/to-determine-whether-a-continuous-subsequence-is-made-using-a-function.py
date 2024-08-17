@@ -1,5 +1,5 @@
 def BinA(A,B):
-    for i in range(len(A)-len(B)):
+    for i in range(len(A)-len(B)+1): 
         IsIt = True
         for j in range(i,i+len(B)):
             if A[j] != B[j-i]:
