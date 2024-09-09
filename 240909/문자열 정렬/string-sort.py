@@ -1,3 +1,3 @@
 S = input()
-sorted(S)
+S = sorted(S)
 print(''.join(S))
