@@ -6,10 +6,10 @@ def FindGCD(ans, newnum):
     GCD = 0
     if ans == newnum:
         return ans
-    elif ans > newnum: # 10 5
+    elif ans > newnum: # 1260 8
         if ans%newnum == 0:
             return ans
-        for i in range(2,ans):
+        for i in range(newnum,1,-1):
             if ans%i == 0 and newnum%i == 0:
                 GCD = i
                 break 
@@ -18,7 +18,7 @@ def FindGCD(ans, newnum):
     else:
         if newnum%ans == 0:
             return newnum
-        for i in range(2,newnum):
+        for i in range(ans,1,-1):
             if ans%i == 0 and newnum%i == 0:
                 GCD = i
                 break 
