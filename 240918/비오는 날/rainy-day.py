@@ -11,7 +11,11 @@ data = [info(date,day,weather) for date,day,weather in arr]
 def IsRecent(y,m,d,recent_date):
     ry,rm,rd = recent_date[:4],recent_date[5:7], recent_date[8:]
     if int(y) < int(ry):
+        return True
+    elif int(y) == int(ry):
         if int(m) < int(rm):
+            return True
+        elif int(m) == int(rm):
             if int(d) < int(rd):
                 return True
     return False
