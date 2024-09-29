@@ -1,4 +1,5 @@
 m1, d1, m2, d2 = map(int,input().split())
+Reversed = False
 if m1 > m2:
     m1,m2 = m2,m1
     d1,d2 = d2,d1
@@ -11,7 +12,7 @@ for i in range(m1-1,m2-1):
     gap += days[i]
 gap += d2-d1
 
-if not Reversed:
-    print(day7[gap%7])
-else:
+if Reversed:
     print(day7[-gap%7])
+else:
+    print(day7[gap%7])
