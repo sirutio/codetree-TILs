@@ -6,11 +6,11 @@ for _ in range(n):
     x, LorR = input().split()
     if LorR == 'L':
         for _ in range(int(x)):
-            arr[loc-1] += 1
+            arr[loc-1] += 1 # 4 5 6 7 8 999 00 1001 
             loc -= 1
     else:
         for _ in range(int(x)):
-            arr[loc+1] += 1
+            arr[loc] += 1
             loc += 1
 ans = 0
 for space in arr:
