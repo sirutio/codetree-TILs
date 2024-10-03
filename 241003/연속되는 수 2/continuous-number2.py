@@ -5,7 +5,7 @@ for _ in range(N):
     arr.append(num)
 
 count = 0
-ans = 0
+ans = 1
 for i in range(N):
     if i == 0 or  arr[i] == arr[i-1]:
         count += 1
