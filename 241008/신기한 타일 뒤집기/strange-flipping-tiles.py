@@ -11,11 +11,11 @@ for _ in range(n):
     if way == 'L':
         for i in range(int(x)):
             arr[cur-i] = 0
-        print(arr)
+        cur -= int(x)
     else:
         for i in range(int(x)):
             arr[cur+i] = 1
-        print(arr)
+        cur += int(x)
 
 w,b = 0,0
 for tile in arr:
