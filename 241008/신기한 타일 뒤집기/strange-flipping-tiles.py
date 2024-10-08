@@ -1,10 +1,10 @@
 '''
 L 흰 R 검 현재 위치 포함
 '''
-OFFSET = 10
+OFFSET = 100*1000
 n = int(input())
 cur = OFFSET
-arr = [-1 for _ in range(OFFSET*2+2)]
+arr = [-1 for _ in range(OFFSET*2)]
 
 for _ in range(n):
     x,way = input().split()
