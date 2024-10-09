@@ -15,9 +15,11 @@ for i in range(y3,y4):
     
 min_x,max_x = OFFSET*2+1,-1
 min_y,max_y = OFFSET*2+1,-1
+IsItThere = False
 for i in range(y1,y2):
     for j in range(x1,x2):
         if arr[i][j] == 1:
+            IsItThere = True
             if j > max_x:
                 max_x = j
             if j < min_x:
@@ -27,7 +29,7 @@ for i in range(y1,y2):
             if i < min_y:
                 min_y = i
 
-if (max_x-min_x+1)*(max_y-min_y+1) != 4004001:         
+if IsItThere:         
     print((max_x-min_x+1)*(max_y-min_y+1))
 else: 
     print(0)
