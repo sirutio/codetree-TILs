@@ -22,9 +22,12 @@ for i in range(y1,y2):
                 max_x = j
             if j < min_x:
                 min_x = j
-        if i > max_y:
-            max_y = i
-        if i < min_y:
-            min_y = i
+            if i > max_y:
+                max_y = i
+            if i < min_y:
+                min_y = i
 
-print((max_x-min_x+1)*(max_y-min_y+1))
+if (max_x-min_x+1)*(max_y-min_y+1) != 4004001:         
+    print((max_x-min_x+1)*(max_y-min_y+1))
+else: 
+    print(0)
