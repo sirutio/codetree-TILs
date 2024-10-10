@@ -6,7 +6,7 @@ for i in range(N):
     temp = int(input())
     arr.append(temp)
     if i != 0 and temp != arr[i-1]:
-        count = 0
+        count = 1
     else:
         count += 1
     if ans < count:
