@@ -1,5 +1,5 @@
 N = int(input())
-ans, count = 0,0
+ans, count = 1,0
 arr = []
 
 for i in range(N):
