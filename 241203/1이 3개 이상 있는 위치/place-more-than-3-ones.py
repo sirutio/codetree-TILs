@@ -1,14 +1,17 @@
-# 25-28
 n = int(input())
 ans = 0
 dxs,dxy = [1,0,-1,0], [0,1,0,-1]
 a = []
+
+# 입력 받기 
 for _ in range(n):
     row = list(map(int,input().split()))
     a.append(row)
+
 # 범위 체크 
 def in_range(x,y):
     return (x >= 0 and x < n) and (y >= 0 and y < n)
+
 # 전체 돌기 
 for y in range(n):
     for x in range(n):
